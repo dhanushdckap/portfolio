@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Bebas+Neue&family=Delicious+Handrawn&family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white border-gray-200 dark:bg-gray-800">
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+        <a href="https://flowbite.com" class="flex items-center">
+            <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" /> -->
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Dhanush</span>
+        </a>
+
+        <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Skill's</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class = "intro">
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Hello I'm Dhanush</h1>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">I'm a designer and Full-stack developer</p>
+    <button type="button" id="scrol" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">About Me</button>
+</div>
+    <div class="timeline" id="demo">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white" style="text-align: center;">Carry start's</h1>
+        <div class="checkpoint">
+            <div>
+                <h2>First title</h2>
+                <p>First line</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>second title</h2>
+                <p>second line</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>third title</h2>
+                <p>third line</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>fourth title</h2>
+                <p>fourth line</p>
+            </div>
+        </div>
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white" style="text-align: center;">It will continue.    ..</h1>
+
+    </div>
+</div>
+
+
+
+<script>
+    let btn  = document.querySelector("#scrol")
+    let con = document.querySelector("#demo")
+    btn.addEventListener("click",()=>{
+        const containerOffset = con.offsetTop;
+        window.scrollTo(0, containerOffset);
+    })
+</script>
+</body>
+</html>

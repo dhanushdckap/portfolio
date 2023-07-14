@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.intro{
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 15rem;
+}
+
+.timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.checkpoint{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.checkpoint div {
+    box-shadow: #049aa8 0px 2px 1px, #04acb9 0px 4px 6px;
+    background-image: linear-gradient(to right bottom, #049aa8, #04acb9, #06bdca, #0bd0da, #12e2eb);
+    border-radius: 1em;
+    padding:1.5em;
+}
+
+.checkpoint h2 {
+    font-weight: 900;
+    color:black;
+}
+
+.checkpoint p {
+    line-height: 27px;
+    color:black;
+}
+
+.checkpoint:nth-child(odd) {
+    border-left: 5px dotted #888;
+    padding-left: 3em;
+    transform: translateX(16.8em);
+}
+
+.checkpoint:nth-child(even){
+    border-right: 5px dotted #888;
+    padding-right: 3em;
+    transform: translateX(-16.9em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background-image: linear-gradient(to right bottom, #049aa8, #04acb9, #06bdca, #0bd0da, #12e2eb);    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.checkpoint:nth-child(even)::before {
+    right: 2px;
+}
+
+.checkpoint:nth-child(odd)::before {
+    right: 30.8em;
+}
+
+.checkpoint:nth-child(even) div::before,
+.checkpoint:nth-child(odd) div::before {
+    content: '';
+    background-color: #fff;
+    box-shadow: 0 0 0.5em #0d71fc;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+    left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+    right: -0.5em;
+}
+
