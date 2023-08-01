@@ -4,10 +4,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
 .intro{
     text-align: center;
-    margin-top: 12rem;
+    margin-top: -25rem;
     margin-bottom: 15rem;
 }
 
@@ -289,4 +288,4 @@
     --size: 2px;
     transition-duration: .7s;
   }
-  
+
