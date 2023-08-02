@@ -11,8 +11,8 @@ window.onresize = function () {
 };
 
 var particles = [];
-var maxParticles = 100;
-var radius = 5;
+var maxParticles =100;
+var radius = 7;
 var lastCollision = 0;
 var repelForce = -5; // Adjust the repel force as needed
 var repelRadius = 1000; // Adjust the repel radius as needed

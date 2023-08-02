@@ -4,12 +4,15 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar{
+  display: none;
+}
 .intro{
     text-align: center;
-    margin-top: -25rem;
+    margin-top: -27rem;
     margin-bottom: 15rem;
 }
-
 .timeline{
     margin: 5em auto;
     max-width: 34.15em;
